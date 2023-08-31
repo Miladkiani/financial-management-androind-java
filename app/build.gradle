@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file("mili_manito_keystore.jks")
+            storePassword KEY_STORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mili.manito"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 4
+        versionName "1.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.material:material:1.1.0-alpha05'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0 alpha04'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-livedata:2.1.0-alpha04"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0-alpha04"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.1.0-alpha04"
+    implementation "androidx.lifecycle:lifecycle-livedata-core:2.1.0-alpha04"
+    implementation 'com.dinuscxj:circleprogressbar:1.3.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    annotationProcessor "androidx.room:room-compiler:2.1.0-alpha04"
+    implementation "androidx.room:room-runtime:2.1.0-alpha06"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android:flexbox:1.1.0'
+    implementation 'com.andrognito.pinlockview:pinlockview:2.1.0'
+    implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
+    testImplementation 'androidx.room:room-testing:2.1.0-alpha04'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+}

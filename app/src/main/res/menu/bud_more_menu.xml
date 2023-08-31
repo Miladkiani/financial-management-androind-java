@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl">
+    <item
+        android:id="@+id/show_bud_item"
+        android:title="@string/menu_show_action"
+        />
+    <item
+        android:id="@+id/update_bud_item"
+        android:title="@string/menu_update_action"
+        />
+    <item
+        android:id="@+id/remove_bud_item"
+        android:title="@string/menu_remove_action"
+        />
+</menu>

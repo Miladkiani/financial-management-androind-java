@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:contentPadding = "5dp"
+    card_view:cardCornerRadius="4dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/bud_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/bud_max_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/bud_title_txt"
+        app:layout_constraintTop_toBottomOf="@+id/bud_title_txt"
+        tools:text="@tools:sample/us_phones" />
+
+    <TextView
+        android:id="@+id/bud_sdate_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/bud_more_imgBtn"
+        app:layout_constraintStart_toEndOf="@+id/bud_more_imgBtn"
+        app:layout_constraintTop_toTopOf="@+id/bud_more_imgBtn"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="-"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/bud_sdate_txt"
+        app:layout_constraintStart_toEndOf="@+id/bud_sdate_txt"
+        app:layout_constraintTop_toTopOf="@+id/bud_sdate_txt" />
+
+    <TextView
+        android:id="@+id/bud_edate_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+        <ImageButton
+            android:id="@+id/bud_more_imgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/bud_max_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bud_title_txt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

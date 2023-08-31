@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    >
+
+    <item
+        android:id="@+id/update_item"
+        android:title="@string/menu_update_action"
+        />
+    <item
+        android:id="@+id/remove_item"
+        android:title="@string/menu_remove_action"
+        />
+</menu>

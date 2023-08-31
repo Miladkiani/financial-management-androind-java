@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:context=".Loan_Pay_Frd">
+    <TextView
+        android:id="@+id/textview89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_pay_loan"
+        style="@style/MainTitle_Style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/payloan_accept_imBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@color/transparent"
+        android:paddingLeft="4dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/ic_done_gr"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textview89"
+        app:layout_constraintStart_toEndOf="@+id/payloan_cancel_imgBtn"
+        app:layout_constraintTop_toTopOf="@+id/textview89" />
+
+    <ProgressBar
+        android:id="@+id/payloan_progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/payloan_accept_imBtn"
+        app:layout_constraintEnd_toEndOf="@+id/payloan_accept_imBtn"
+        app:layout_constraintStart_toStartOf="@+id/payloan_accept_imBtn"
+        app:layout_constraintTop_toTopOf="@+id/payloan_accept_imBtn" />
+
+    <ImageButton
+        android:id="@+id/payloan_cancel_imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/ic_clear_rd"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/payloan_accept_imBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/payloan_accept_imBtn" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/hLine"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview89" />
+
+    <Spinner
+        android:id="@+id/payloan_acc_spn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="end|center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/payloan_acctitle_txt"
+        app:layout_constraintEnd_toStartOf="@+id/payloan_acctitle_txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/payloan_acctitle_txt" />
+
+
+    <EditText
+        android:id="@+id/payloan_howmany_etxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/hint_loan_count"
+        style="@style/EditText_Style"
+        app:layout_constraintBottom_toBottomOf="@+id/textview61"
+        app:layout_constraintEnd_toEndOf="@+id/payloan_acc_spn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/payloan_acc_spn"
+        app:layout_constraintTop_toTopOf="@+id/textview61" />
+
+
+    <TextView
+        android:id="@+id/payloan_acctitle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/account_transaction_pay"
+        style="@style/Title_Style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/textview61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/howMany_loan"
+        style="@style/Title_Style"
+        app:layout_constraintEnd_toEndOf="@+id/payloan_acctitle_txt"
+        app:layout_constraintTop_toBottomOf="@+id/payloan_acctitle_txt" />
+
+
+    <EditText
+        android:id="@+id/payloan_time_etxt"
+        android:focusable="false"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        style="@style/EditText_Style.DateTime"
+        app:layout_constraintBottom_toBottomOf="@+id/payloan_add_time"
+        app:layout_constraintEnd_toEndOf="@+id/payloan_howmany_etxt"
+        app:layout_constraintTop_toTopOf="@+id/payloan_add_time"
+        tools:text="@tools:sample/date/hhmm" />
+
+    <EditText
+        android:id="@+id/payloan_dates_etxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        style="@style/EditText_Style.DateTime"
+        app:layout_constraintBottom_toBottomOf="@+id/payloan_time_etxt"
+        app:layout_constraintEnd_toStartOf="@+id/payloan_time_etxt"
+        app:layout_constraintStart_toStartOf="@+id/payloan_howmany_etxt"
+        app:layout_constraintTop_toTopOf="@+id/payloan_time_etxt"
+        tools:text="@tools:sample/date/mmddyy" />
+
+    <ImageButton
+        android:id="@+id/payloan_add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/ic_add_date"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/textview61"
+        app:layout_constraintTop_toBottomOf="@+id/textview61" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

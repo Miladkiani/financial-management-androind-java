@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/nav_budget"
+        android:title="@string/nav_budget"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_calculations"
+
+        />
+    <item
+        android:id="@+id/nav_report"
+        android:title="@string/nav_report"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_report"
+        />
+
+    <item
+        android:id="@+id/nav_trans"
+        android:title="@string/nav_trans"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_trans"
+        />
+    <item
+        android:id="@+id/nav_account"
+        android:title="@string/nav_account"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_wallet"
+        />
+    <item
+        android:id="@+id/nav_loan"
+        android:title="@string/nav_loan"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_loan"
+        />
+</menu>

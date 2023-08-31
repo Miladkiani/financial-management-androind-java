@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name" translatable="false">مانیتو</string>
+    <string name="developer_title" translatable="false">توسعه دهنده:</string>
+    <string name="developer_name" translatable="false">میلی</string>
+    <string name="developer_mail" translatable="false">ارسال ایمیل</string>
+    <string name="developer_comment" translatable="false">ارسال نظر</string>
+
+    <string name="after_date" translatable="false">\u003e</string>
+    <string name="previous_date" translatable="false">\u003c</string>
+    <string name="percent_persian_symbol" translatable="false">\u066A</string>
+
+    <string name="check_remind_loan" translatable="false">تعداد اقساط بیشتر از اقساط باقیمانده است </string>
+    <string name="title_add_tran" translatable="false">تراکنش جدید</string>
+    <string name="title_pay_loan" translatable="false">پرداخت وام</string>
+    <string name="title_tran" translatable="false">تراکنش</string>
+    <string name="title_add_account" translatable="false">حساب جدید</string>
+    <string name="title_add_loan" translatable="false">وام جدید</string>
+    <string name="transfer_cate" translatable="false">انتقال وجه</string>
+    <string name="tag_title" translatable="false">عنوان برچسب</string>
+    <string name="name_loan" translatable="false">عنوان وام</string>
+    <string name="cost_loan" translatable="false">هزینه هر قسط</string>
+    <string name="count_loan" translatable="false">تعداد اقساط</string>
+    <string name="howMany_loan" translatable="false">چند قسط</string>
+    <string name="count_pay_loan" translatable="false">پرداخت شده</string>
+    <string name="count_remind_loan" translatable="false"> باقیمانده</string>
+    <string name="remind_cost_loan" translatable="false">مانده اقساط </string>
+    <string name="date_loan" translatable="false">تاریخ اولین پرداخت</string>
+    <string name="loan_pay" translatable="false">پرداخت</string>
+
+    <string name="nav_profile" translatable="false">پروفایل</string>
+    <string name="nav_labels" translatable="false">برچسب ها</string>
+    <string name="nav_settings" translatable="false">تنظیمات</string>
+
+    <string name="title_filter_transaction_layout" translatable="false">  نحوه نمایش تراکنش ها</string>
+
+    <string name="title_filter_date" translatable="false">چه وقتایی؟</string>
+    <string name="title_filter_daily_radio" translatable="false">روزانه</string>
+    <string name="title_filter_monthly_radio" translatable="false">ماهانه</string>
+    <string name="title_filter_yearly_radio" translatable="false">سالانه</string>
+    <string name="filter_accept" translatable="false">فیلتر کن</string>
+
+    <string name="unit_rial" translatable="false">ریال</string>
+    <string name="unit_tooman" translatable="false">تومان</string>
+
+    <string name="nav_account" translatable="false">کیف پول</string>
+    <string name="nav_budget" translatable="false">بودجه بندی</string>
+    <string name="nav_trans" translatable="false">تراکنش</string>
+    <string name="nav_report" translatable="false">آمار</string>
+    <string name="nav_loan" translatable="false">وام</string>
+
+    <string name="bud_title" translatable="false">عنوان بودجه</string>
+    <string name="bud_eDate" translatable="false">تا</string>
+    <string name="bud_cost" translatable="false">کل بودجه</string>
+    <string name="bud_budgeting" translatable="false">دسته بندی بودجه</string>
+
+
+    <string name="default_balance">موجودی اولیه</string>
+
+
+    <string name="bud_title_cate" translatable="false">دسته</string>
+    <string name="bud_bud" translatable="false">بودجه</string>
+    <string name="bud_paid" translatable="false">هزینه شده</string>
+
+
+    <string name="pay_tran" translatable="false">هزینه</string>
+    <string name="get_tran" translatable="false">درآمد</string>
+    <string name="pay_all_tran" translatable="false">کل هزینه ها</string>
+    <string name="pay_avg_tran" translatable="false">میانگین هزینه ها</string>
+    <string name="get_all_tran" translatable="false"> کل درآمد ها</string>
+    <string name="get_avg_tran" translatable="false"> میانگین درآمد ها</string>
+    <string name="count_tran" translatable="false">تعداد تراکنش ها</string>
+    <string name="cate_transaction" translatable="false">دسته بندی</string>
+    <string name="lbl_tran" translatable="false">برچسب</string>
+    <string name="account_transaction_get" translatable="false">به حساب</string>
+    <string name="account_transaction_pay" translatable="false">از حساب</string>
+    <string name="account_balance_title" translatable="false">مانده حساب</string>
+    <string name="acc_name" translatable="false">نام حساب</string>
+    <string name="account_add" translatable="false">افزودن حساب</string>
+    <string name="account_total_title" translatable="false">کل موجودی</string>
+    <string name="acc_total" translatable="false">موجودی حساب</string>
+    <string name="acc_condition" translatable="false">وضعیت حساب</string>
+    <string name="menu_remove_action" translatable="false">حذف</string>
+    <string name="menu_update_action" translatable="false">ویرایش</string>
+    <string name="menu_show_action" translatable="false">مشاهده</string>
+
+    <string name="start_time" translatable="false">از تاریخ</string>
+    <string name="end_time" translatable="false">تا تاریخ</string>
+
+    <string name="account_diactive" translatable="false">مسدود</string>
+    <string name="account_active" translatable="false">فعال</string>
+    <string name="account_all" translatable="false">همه</string>
+
+    <string name="empty_tran" translatable="false">با فشردن تصویر پایین سمت چپ تراکنش های خود را ثبت نمایید</string>
+    <string name="empty_loan" translatable="false">با فشردن + در قسمت پایین سمت چپ وام های خود را اضافه کنید</string>
+    <string name="empty_budget" translatable="false">با فشردن + در قسمت پایین سمت چپ بودجه بندی را شروع نمایید</string>
+    <string name="empty_account" translatable="false">با فشردن + در قسمت پایین سمت چپ حساب های خود را اضافه نمایید</string>
+    <string name="empty_tags" translatable="false">با فشردن + در قسمت پایین سمت چپ  برچسب های مورد نظر را اضافه نمایید</string>
+
+
+    <string name="check_budgeting" translatable="false">جمع بودجه بندی شما از کل بودجه بیشتر می شود</string>
+    <string name="first_max" translatable="false">قبل از بودجه بندی دسته ها کل بودجه را تعیین کنید</string>
+    <string name="check_budget" translatable="false">بودجه بندی را کامل و سپس تایید نمایید</string>
+    <string name="check_budget_time">محدوده زمانی بودجه به درستی وارد نشده است</string>
+    <string name="check_transfer_accounts">انتقال وجه از یک حساب به خودش امکان پذیر نیست </string>
+
+    //hint
+    <string name="hint_acc_name" translatable="false">نقد</string>
+    <string name="hint_cost" translatable="false">۱۰۰,۰۰۰</string>
+    <string name="hint_loan_name" translatable="false">وام شماره ۱</string>
+    <string name="hint_budget_name" translatable="false">بودجه دی ماه</string>
+    <string name="hint_loan_count" translatable="false">۱۲</string>
+    <string name="hint_tag_title" translatable="false">مواد غذایی</string>
+
+    <string name="app_bar_tag">برچسب ها</string>
+    <string name="app_bar_setting">تنظیمات</string>
+    <string name="app_bar_about">درباره</string>
+    <string name="unit_money">واحد پول</string>
+
+    <string name="pref_security_cate_key">security_keys</string>
+    <string name="pref_security_cate_title">حریم خصوصی</string>
+
+    <string name="pref_pin_key">pinCode_key</string>
+    <string name="pref_pin_title">قفل با گذرواژه</string>
+    <string name="pin_pass_now">یک گذرواژه وارد کنید</string>
+    <string name="pin_pass_new">گذرواژه جدید خود را وارد کنید</string>
+    <string name="pin_pass_accept">گذرواژه جدید خود را دوباره وارد کنید</string>
+    <string name="pin_pass_enter">گذرواژه خود را وارد کنید</string>
+    <string name="pin_change">تغییر گذرواژه</string>
+
+
+    <string name="tag_add">افزودن برچسب</string>
+
+    <string name="pref_accounting_cate_title">حسابداری</string>
+
+    <string name="edit_tran">ویرایش تراکنش</string>
+    <string name="edit_loan">ویرایش وام</string>
+    <string name="edit_transfer">ویرایش انتقال</string>
+    <string name="edit_acc">ویرایش حساب</string>
+    <string name="edit_bud">ویرایش بودجه</string>
+
+    <string-array name="tran_option">
+        <item>همه</item>
+        <item>پرداخت</item>
+        <item>دریافت</item>
+        <item>انتقال وجه</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/title_add_tran_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_add_tran"
+            style="@style/MainTitle_Style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/tran_accept_imBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@color/transparent"
+            android:paddingLeft="4dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_done_gr"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/title_add_tran_txt"
+            app:layout_constraintStart_toEndOf="@+id/tran_cancel_imgBtn"
+            app:layout_constraintTop_toTopOf="@+id/title_add_tran_txt" />
+
+        <ProgressBar
+            android:id="@+id/tran_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_accept_imBtn"
+            app:layout_constraintEnd_toEndOf="@+id/tran_accept_imBtn"
+            app:layout_constraintStart_toEndOf="@+id/tran_cancel_imgBtn"
+            app:layout_constraintTop_toTopOf="@+id/tran_accept_imBtn" />
+
+        <ImageButton
+            android:id="@+id/tran_cancel_imgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_clear_rd"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_accept_imBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tran_accept_imBtn" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/hLine"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_add_tran_txt" />
+
+
+        <Button
+            android:id="@+id/tran_get_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_tran"
+            android:textStyle="bold"
+            android:gravity="center|center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_pay_btn"
+            app:layout_constraintEnd_toStartOf="@+id/tran_pay_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tran_pay_btn" />
+
+        <Button
+            android:id="@+id/tran_pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/pay_tran"
+            android:textStyle="bold"
+            android:gravity="center|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tran_get_btn"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/cate_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/cate_transaction"
+            style="@style/Title_Style"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_cate_spn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tran_cate_spn" />
+
+
+        <Spinner
+            android:id="@+id/tran_cate_spn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="end|center_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/cate_name_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tran_pay_btn" />
+
+        <TextView
+            android:id="@+id/tran_acctitle_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_transaction_pay"
+            style="@style/Title_Style"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_acc_spn"
+            app:layout_constraintEnd_toEndOf="@+id/cate_name_txt"
+            app:layout_constraintTop_toTopOf="@+id/tran_acc_spn" />
+
+        <Spinner
+            android:id="@+id/tran_acc_spn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end|center_vertical"
+            app:layout_constraintEnd_toEndOf="@+id/tran_cate_spn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tran_cate_spn"
+            app:layout_constraintTop_toBottomOf="@+id/tran_cate_spn" />
+
+        <TextView
+            android:id="@+id/cost_unit_txt"
+            style="@style/Title_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tran_cost_etxt"
+            app:layout_constraintEnd_toEndOf="@+id/tran_acctitle_txt" />
+
+        <EditText
+            android:id="@+id/tran_cost_etxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:hint="@string/hint_cost"
+            style="@style/EditText_Style"
+            android:textAppearance="?android:textAppearanceListItemSmall"
+            app:layout_constraintEnd_toEndOf="@+id/tran_acc_spn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tran_acc_spn"
+            app:layout_constraintTop_toBottomOf="@+id/tran_acc_spn"
+            />
+        <ImageButton
+            android:id="@+id/tran_add_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_add_date"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_time_etxt"
+            app:layout_constraintEnd_toEndOf="@+id/cost_unit_txt"
+            app:layout_constraintTop_toTopOf="@+id/tran_time_etxt" />
+
+        <EditText
+            android:id="@+id/tran_time_etxt"
+            style="@style/EditText_Style.DateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tran_date_etxt"
+            app:layout_constraintEnd_toEndOf="@+id/tran_cost_etxt"
+            app:layout_constraintTop_toTopOf="@+id/tran_date_etxt"
+            tools:text="@tools:sample/date/hhmm" />
+
+        <EditText
+            android:id="@+id/tran_date_etxt"
+            style="@style/EditText_Style.DateTime"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view_tags"
+            app:layout_constraintEnd_toStartOf="@+id/tran_time_etxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tran_cost_etxt"
+            tools:text="@tools:sample/date/mmddyy" />
+
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/lbl_tran"
+            style="@style/Title_Style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tran_time_etxt" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_tags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/add_tag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_tag" />
+
+
+        <ImageButton
+            android:id="@+id/add_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_tag"
+            app:layout_constraintEnd_toEndOf="@+id/tran_time_etxt"
+            app:layout_constraintTop_toTopOf="@+id/lbl_title" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

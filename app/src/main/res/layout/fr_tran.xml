@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranFrag"
+
+    >
+    <com.google.android.material.appbar.AppBarLayout
+     android:id="@+id/app_bar_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+        >
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:titleEnabled="false"
+        app:contentScrim="?attr/colorPrimary"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="parallax"
+            android:layout_marginTop="?attr/actionBarSize"
+            >
+
+            <TextView
+                android:id="@+id/previous_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="@string/after_date"
+                android:textColor="@color/White"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/show_date_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/show_date_txt"
+                app:layout_constraintTop_toTopOf="@+id/show_date_txt" />
+
+            <TextView
+                android:id="@+id/show_date_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center|center_vertical"
+                android:textColor="@color/White"
+                android:textAppearance="?android:textAppearanceListItemSmall"
+                app:layout_constraintEnd_toStartOf="@+id/previous_date_txt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/after_date_txt"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@tools:sample/last_names" />
+
+            <TextView
+                android:id="@+id/after_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="@string/previous_date"
+                android:textColor="@color/White"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/show_date_txt"
+                app:layout_constraintEnd_toStartOf="@+id/show_date_txt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/filter_list_imgBtn"
+                app:layout_constraintTop_toTopOf="@+id/show_date_txt" />
+
+            <ImageButton
+                android:id="@+id/filter_list_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_filter_list_white_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/after_date_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/after_date_txt"
+                app:layout_constraintVertical_bias="0.514" />
+
+
+            <TextView
+                android:id="@+id/count_tran_txt"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center|center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                app:autoSizeMaxTextSize="18dp"
+                app:autoSizeMinTextSize="12dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="@+id/tran_option_spn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tran_option_spn" />
+
+            <Spinner
+                android:id="@+id/tran_option_spn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tran_sumget_txt" />
+
+            <TextView
+                android:id="@+id/tran_sumget_txt"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center|center_vertical"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform"
+                android:textColor="@color/White"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tran_sumpay_txt"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+            <TextView
+                android:id="@+id/tran_sumpay_txt"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center|center_vertical"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform"
+                android:textColor="@color/White"
+                app:layout_constraintBottom_toBottomOf="@+id/tran_sumget_txt"
+                app:layout_constraintEnd_toStartOf="@+id/tran_sumget_txt"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tran_sumget_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_get"
+                app:layout_constraintEnd_toEndOf="@+id/tran_sumget_txt"
+                app:layout_constraintStart_toStartOf="@+id/tran_sumget_txt"
+                app:layout_constraintTop_toBottomOf="@+id/show_date_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_loss"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="@+id/tran_sumpay_txt"
+                app:layout_constraintStart_toStartOf="@+id/tran_sumpay_txt"
+                app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:layout_collapseMode="pin"
+            android:fitsSystemWindows="true"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            />
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <TextView
+            android:id="@+id/tran_empty_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EmptyText_Style"
+            android:text="@string/empty_tran"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_transaction_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_transaction"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/recycler_view"
+            app:layout_anchorGravity="start|left|bottom" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
