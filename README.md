@@ -34,9 +34,12 @@ To run this application on your local device, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
-![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 1](./screenshots/Screenshot_201907.png)
+![Screenshot 2](screenshots/Screenshot_20190707-195530.png)
+![Screenshot 3](screenshots/Screenshot_20190707-195727.png)
+![Screenshot 3](screenshots/Screenshot_20190707-195958.png)
+![Screenshot 3](screenshots/Screenshot_20190707-200004.png)
+![Screenshot 3](screenshots/Screenshot_20190707-200152.png)
 
 ## Technologies Used
 
